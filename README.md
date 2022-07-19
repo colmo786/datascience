@@ -10,6 +10,7 @@ Miniconda is a small, bootstrap version of Anaconda that includes only conda, Py
 2. Abrir un power shell de conda (recién instalado) debería aparecer algo así<br>
 ![image](https://user-images.githubusercontent.com/47650265/154078829-1c3ae78c-8353-4b72-828e-36a18082eeec.png)<br>
 donde (base) es el ambiente recientemente creado.
+3. Crear un entorno con python 3.9: conda create -n py39 python=3.9
 ### Jupyter Lab
 3. Instalar Jupyter Lab: en la sesión de powershell, escribir "pip install jupyterlab"<br>
 https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html<br>
