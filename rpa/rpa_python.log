@@ -1,0 +1,7 @@
+ERROR - cannot find c:\Users\COLMO\OneDrive\0-Data Science\data_science\datascience\rpa\rpa_python
+Unable to open file: c:\Users\COLMO\OneDrive\0-Data
+
+  phantomjs://code/bootstrap.js:113 in __die
+Unable to load script c:\Users\COLMO\OneDrive\0-Data; check file syntax
+
+  phantomjs://code/bootstrap.js:113 in __die

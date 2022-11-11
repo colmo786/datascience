@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
+		<style>
+			body {
+			font-family: "Ubuntu", sans-serif;
+			}
+		</style>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+		
+		{% if title %}
+		<title>{{ title }} - My First Web App</title>
+		{% else %}
+		<title>Welcome to My First Web App</title>
+		{% endif %}
+		<link href="/static/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--<div>My First Web App: <a href="/index">Home</a>
+			<img src="{{url_for('static', filename='images/Pampa-Encabe.png')}}" alt="Pampa" width="120" height="50" align="right"/>
+		</div>-->
+		<div>
+			<img src="{{url_for('static', filename='images/Pampa-Encabe.png')}}" alt="Pampa" width="130" height="50" align="left"/>
+		</div>
+		<main>
+		  <div class="container">
+			<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+			  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+				<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+				{% if title %}
+				<span class="fs-4">{{ title }}</span>
+				{% endif %}
+			  </a>
+
+			  <ul class="nav nav-pills">
+				<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+			  </ul>
+			</header>
+		  </div>
+
+		  <div class="b-example-divider"></div>
+		</main>
+			<hr>
+			{% block content %}{% endblock %}
+    </body>
+</html>
